@@ -15,14 +15,14 @@ class VendorObserver: ObserverProtocol {
         Id = _Id
     }
     
-    func onTrafficLightColorChange(_color: String) {
+    func onTrafficLightColorChange(_color: TrafficColorValue) {
         
-        if _color == TrafficColor.red {
-            debugPrint("Vendor: Start selling products")
+        if _color == .red {
+            debugPrint("VENDOR \(Id): Start selling products")
         }
         
-        if _color == TrafficColor.green {
-            debugPrint("Vendor: Move aside from the traffic")
+        if _color == .green {
+            debugPrint("VENDOR \(Id): Move aside from the traffic")
         }
     }
     

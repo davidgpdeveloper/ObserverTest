@@ -111,6 +111,14 @@
 			path = Subjects;
 			sourceTree = "<group>";
 		};
+		963D512B2572C18900611DDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				963D51192572B73D00611DDA /* TrafficColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		96A182E82572B2BF00E9672D = {
 			isa = PBXGroup;
 			children = (
@@ -175,10 +183,10 @@
 		96A183342572B3B600E9672D /* Observer files */ = {
 			isa = PBXGroup;
 			children = (
+				963D512B2572C18900611DDA /* Models */,
 				963D51252572B85900611DDA /* Subjects */,
 				963D51242572B7FD00611DDA /* Protocols */,
 				963D51232572B7F000611DDA /* Observers */,
-				963D51192572B73D00611DDA /* TrafficColor.swift */,
 			);
 			path = "Observer files";
 			sourceTree = "<group>";

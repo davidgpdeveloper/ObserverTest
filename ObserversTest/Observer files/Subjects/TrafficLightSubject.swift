@@ -10,11 +10,11 @@ import Foundation
 class TrafficLightSubject {
 
     // MARK: VARIABLES
-    private var _color  = String()
+    private var _color = TrafficColorValue.red
     // The array wich contains the list of all the observers
     private var trafficObserver = [ObserverProtocol]()
     
-    var trafficLightColor: String {
+    var trafficLightColor: TrafficColorValue {
         get {
             return _color
         }
