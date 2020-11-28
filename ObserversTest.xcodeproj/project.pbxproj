@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963D51102572B6B300611DDA /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D510F2572B6B300611DDA /* ObserverProtocol.swift */; };
+		963D51152572B71500611DDA /* VehicleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51142572B71500611DDA /* VehicleObserver.swift */; };
+		963D511A2572B73D00611DDA /* TrafficColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51192572B73D00611DDA /* TrafficColor.swift */; };
+		963D511F2572B7CC00611DDA /* VendorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D511E2572B7CC00611DDA /* VendorObserver.swift */; };
+		963D51272572B86600611DDA /* TrafficLightSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51262572B86600611DDA /* TrafficLightSubject.swift */; };
 		96A182F52572B2BF00E9672D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A182F42572B2BF00E9672D /* AppDelegate.swift */; };
 		96A182F72572B2BF00E9672D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A182F62572B2BF00E9672D /* SceneDelegate.swift */; };
 		96A182F92572B2BF00E9672D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A182F82572B2BF00E9672D /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963D510F2572B6B300611DDA /* ObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
+		963D51142572B71500611DDA /* VehicleObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleObserver.swift; sourceTree = "<group>"; };
+		963D51192572B73D00611DDA /* TrafficColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficColor.swift; sourceTree = "<group>"; };
+		963D511E2572B7CC00611DDA /* VendorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorObserver.swift; sourceTree = "<group>"; };
+		963D51262572B86600611DDA /* TrafficLightSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightSubject.swift; sourceTree = "<group>"; };
 		96A182F12572B2BF00E9672D /* ObserversTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObserversTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A182F42572B2BF00E9672D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A182F62572B2BF00E9672D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		963D51232572B7F000611DDA /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				963D51142572B71500611DDA /* VehicleObserver.swift */,
+				963D511E2572B7CC00611DDA /* VendorObserver.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		963D51242572B7FD00611DDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				963D510F2572B6B300611DDA /* ObserverProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		963D51252572B85900611DDA /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				963D51262572B86600611DDA /* TrafficLightSubject.swift */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
 		96A182E82572B2BF00E9672D = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +134,12 @@
 		96A182F32572B2BF00E9672D /* ObserversTest */ = {
 			isa = PBXGroup;
 			children = (
+				96A183342572B3B600E9672D /* Observer files */,
 				96A182F42572B2BF00E9672D /* AppDelegate.swift */,
 				96A182F62572B2BF00E9672D /* SceneDelegate.swift */,
 				96A182F82572B2BF00E9672D /* ViewController.swift */,
 				96A182FA2572B2BF00E9672D /* Main.storyboard */,
-				96A182FD2572B2C000E9672D /* Assets.xcassets */,
-				96A182FF2572B2C000E9672D /* LaunchScreen.storyboard */,
-				96A183022572B2C000E9672D /* Info.plist */,
+				96A183272572B2F800E9672D /* Support files */,
 			);
 			path = ObserversTest;
 			sourceTree = "<group>";
@@ -126,6 +160,27 @@
 				96A183182572B2C000E9672D /* Info.plist */,
 			);
 			path = ObserversTestUITests;
+			sourceTree = "<group>";
+		};
+		96A183272572B2F800E9672D /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				96A182FD2572B2C000E9672D /* Assets.xcassets */,
+				96A182FF2572B2C000E9672D /* LaunchScreen.storyboard */,
+				96A183022572B2C000E9672D /* Info.plist */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		96A183342572B3B600E9672D /* Observer files */ = {
+			isa = PBXGroup;
+			children = (
+				963D51252572B85900611DDA /* Subjects */,
+				963D51242572B7FD00611DDA /* Protocols */,
+				963D51232572B7F000611DDA /* Observers */,
+				963D51192572B73D00611DDA /* TrafficColor.swift */,
+			);
+			path = "Observer files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A182F92572B2BF00E9672D /* ViewController.swift in Sources */,
+				963D511A2572B73D00611DDA /* TrafficColor.swift in Sources */,
 				96A182F52572B2BF00E9672D /* AppDelegate.swift in Sources */,
+				963D51272572B86600611DDA /* TrafficLightSubject.swift in Sources */,
+				963D511F2572B7CC00611DDA /* VendorObserver.swift in Sources */,
 				96A182F72572B2BF00E9672D /* SceneDelegate.swift in Sources */,
+				963D51102572B6B300611DDA /* ObserverProtocol.swift in Sources */,
+				963D51152572B71500611DDA /* VehicleObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTUSCAYQM8;
-				INFOPLIST_FILE = ObserversTest/Info.plist;
+				INFOPLIST_FILE = "ObserversTest/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DTUSCAYQM8;
-				INFOPLIST_FILE = ObserversTest/Info.plist;
+				INFOPLIST_FILE = "ObserversTest/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
