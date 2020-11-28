@@ -17,15 +17,15 @@ class VehicleObserver: ObserverProtocol {
     
     func onTrafficLightColorChange(_color: String) {
         
-        if(_color == TrafficColor.red) {
+        if _color == TrafficColor.red {
             debugPrint("stop my vehicle")
         }
         
-        if(_color == TrafficColor.green) {
+        if _color == TrafficColor.green {
             debugPrint("start my vehicle")
         }
         
-        if(_color == TrafficColor.yellow) {
+        if _color == TrafficColor.yellow {
             debugPrint("slow down the speed of my vehicle")
         }
     }

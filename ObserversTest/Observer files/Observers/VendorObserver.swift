@@ -7,7 +7,7 @@
 
 import Foundation
 
-class VendorObserver : ObserverProtocol {
+class VendorObserver: ObserverProtocol {
     
     var Id: Int
     
@@ -17,11 +17,11 @@ class VendorObserver : ObserverProtocol {
     
     func onTrafficLightColorChange(_color: String) {
         
-        if(_color == TrafficColor.red) {
+        if _color == TrafficColor.red {
             debugPrint("Vendor: Start selling products")
         }
         
-        if(_color == TrafficColor.green) {
+        if _color == TrafficColor.green {
             debugPrint("Vendor: Move aside from the traffic")
         }
     }

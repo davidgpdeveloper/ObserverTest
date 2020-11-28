@@ -8,8 +8,11 @@
 import Foundation
 
 class TrafficLightSubject {
-    
+
+    // MARK: VARIABLES
     private var _color  = String()
+    // The array wich contains the list of all the observers
+    private var trafficObserver = [ObserverProtocol]()
     
     var trafficLightColor: String {
         get {
@@ -22,9 +25,7 @@ class TrafficLightSubject {
         }
     }
     
-    // The array wich contains the list of all the observers
-    private var trafficObserver = [ObserverProtocol]()
-    
+    // MARK: FUNCTIONS
     func addObserver(_observer: ObserverProtocol) {
         
         // Validation to check if the observer was already added to the array
@@ -43,6 +44,7 @@ class TrafficLightSubject {
         trafficObserver.forEach({$0.onTrafficLightColorChange(_color: _color)})
     }
     
+    // MARK: DEINIT
     deinit {
         trafficObserver.removeAll()
     }
