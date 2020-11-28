@@ -12,7 +12,7 @@ class VendorObserver: ObserverProtocol {
     var Id: Int
     
     init(_Id : Int) {
-        Id = _Id
+        Id = Int("\(TypeObserverValue.vendor.rawValue)\(_Id)") ?? 0
     }
     
     func onTrafficLightColorChange(_color: TrafficColorValue) {

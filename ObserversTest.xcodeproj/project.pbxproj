@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		963D51102572B6B300611DDA /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D510F2572B6B300611DDA /* ObserverProtocol.swift */; };
 		963D51152572B71500611DDA /* VehicleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51142572B71500611DDA /* VehicleObserver.swift */; };
-		963D511A2572B73D00611DDA /* TrafficColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51192572B73D00611DDA /* TrafficColor.swift */; };
+		963D511A2572B73D00611DDA /* TrafficColorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51192572B73D00611DDA /* TrafficColorValue.swift */; };
 		963D511F2572B7CC00611DDA /* VendorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D511E2572B7CC00611DDA /* VendorObserver.swift */; };
 		963D51272572B86600611DDA /* TrafficLightSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51262572B86600611DDA /* TrafficLightSubject.swift */; };
 		96A182F52572B2BF00E9672D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A182F42572B2BF00E9672D /* AppDelegate.swift */; };
@@ -20,6 +20,7 @@
 		96A183012572B2C000E9672D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A182FF2572B2C000E9672D /* LaunchScreen.storyboard */; };
 		96A1830C2572B2C000E9672D /* ObserversTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1830B2572B2C000E9672D /* ObserversTestTests.swift */; };
 		96A183172572B2C000E9672D /* ObserversTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A183162572B2C000E9672D /* ObserversTestUITests.swift */; };
+		96DA2B282572CC8B003D4903 /* TypeObserverValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA2B272572CC8B003D4903 /* TypeObserverValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 /* Begin PBXFileReference section */
 		963D510F2572B6B300611DDA /* ObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
 		963D51142572B71500611DDA /* VehicleObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleObserver.swift; sourceTree = "<group>"; };
-		963D51192572B73D00611DDA /* TrafficColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficColor.swift; sourceTree = "<group>"; };
+		963D51192572B73D00611DDA /* TrafficColorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficColorValue.swift; sourceTree = "<group>"; };
 		963D511E2572B7CC00611DDA /* VendorObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorObserver.swift; sourceTree = "<group>"; };
 		963D51262572B86600611DDA /* TrafficLightSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightSubject.swift; sourceTree = "<group>"; };
 		96A182F12572B2BF00E9672D /* ObserversTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObserversTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +60,7 @@
 		96A183122572B2C000E9672D /* ObserversTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserversTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A183162572B2C000E9672D /* ObserversTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserversTestUITests.swift; sourceTree = "<group>"; };
 		96A183182572B2C000E9672D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DA2B272572CC8B003D4903 /* TypeObserverValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeObserverValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,8 @@
 		963D512B2572C18900611DDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				963D51192572B73D00611DDA /* TrafficColor.swift */,
+				963D51192572B73D00611DDA /* TrafficColorValue.swift */,
+				96DA2B272572CC8B003D4903 /* TypeObserverValue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,8 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DA2B282572CC8B003D4903 /* TypeObserverValue.swift in Sources */,
 				96A182F92572B2BF00E9672D /* ViewController.swift in Sources */,
-				963D511A2572B73D00611DDA /* TrafficColor.swift in Sources */,
+				963D511A2572B73D00611DDA /* TrafficColorValue.swift in Sources */,
 				96A182F52572B2BF00E9672D /* AppDelegate.swift in Sources */,
 				963D51272572B86600611DDA /* TrafficLightSubject.swift in Sources */,
 				963D511F2572B7CC00611DDA /* VendorObserver.swift in Sources */,

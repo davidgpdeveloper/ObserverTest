@@ -12,7 +12,7 @@ class VehicleObserver: ObserverProtocol {
     var Id: Int
     
     init(_Id : Int) {
-        Id = _Id
+        Id = Int("\(TypeObserverValue.vehicle.rawValue)\(_Id)") ?? 0
     }
     
     func onTrafficLightColorChange(_color: TrafficColorValue) {
@@ -26,7 +26,7 @@ class VehicleObserver: ObserverProtocol {
         }
         
         if _color == .yellow {
-            debugPrint("VEHICLE \(Id):  down the speed of my vehicle")
+            debugPrint("VEHICLE \(Id): down the speed of my vehicle")
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  TrafficColor.swift
+//  TrafficColorValue.swift
 //  ObserversTest
 //
 //  Created by David SG on 28/11/20.
