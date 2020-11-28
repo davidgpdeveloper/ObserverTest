@@ -21,6 +21,8 @@
 		96A1830C2572B2C000E9672D /* ObserversTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1830B2572B2C000E9672D /* ObserversTestTests.swift */; };
 		96A183172572B2C000E9672D /* ObserversTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A183162572B2C000E9672D /* ObserversTestUITests.swift */; };
 		96DA2B282572CC8B003D4903 /* TypeObserverValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA2B272572CC8B003D4903 /* TypeObserverValue.swift */; };
+		96DA2B302572DF86003D4903 /* TrafficLightsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA2B2F2572DF86003D4903 /* TrafficLightsActions.swift */; };
+		96DA2B422572E209003D4903 /* TrafficLightSubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA2B412572E209003D4903 /* TrafficLightSubjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		96A183162572B2C000E9672D /* ObserversTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserversTestUITests.swift; sourceTree = "<group>"; };
 		96A183182572B2C000E9672D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96DA2B272572CC8B003D4903 /* TypeObserverValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeObserverValue.swift; sourceTree = "<group>"; };
+		96DA2B2F2572DF86003D4903 /* TrafficLightsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsActions.swift; sourceTree = "<group>"; };
+		96DA2B412572E209003D4903 /* TrafficLightSubjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightSubjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 		96A1830A2572B2C000E9672D /* ObserversTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				96DA2B342572E06A003D4903 /* Observers files tests */,
 				96A1830B2572B2C000E9672D /* ObserversTestTests.swift */,
 				96A1830D2572B2C000E9672D /* Info.plist */,
 			);
@@ -190,8 +195,25 @@
 				963D51252572B85900611DDA /* Subjects */,
 				963D51242572B7FD00611DDA /* Protocols */,
 				963D51232572B7F000611DDA /* Observers */,
+				96DA2B2F2572DF86003D4903 /* TrafficLightsActions.swift */,
 			);
 			path = "Observer files";
+			sourceTree = "<group>";
+		};
+		96DA2B342572E06A003D4903 /* Observers files tests */ = {
+			isa = PBXGroup;
+			children = (
+				96DA2B352572E1DE003D4903 /* Subjects tests */,
+			);
+			path = "Observers files tests";
+			sourceTree = "<group>";
+		};
+		96DA2B352572E1DE003D4903 /* Subjects tests */ = {
+			isa = PBXGroup;
+			children = (
+				96DA2B412572E209003D4903 /* TrafficLightSubjectTests.swift */,
+			);
+			path = "Subjects tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +348,7 @@
 			files = (
 				96DA2B282572CC8B003D4903 /* TypeObserverValue.swift in Sources */,
 				96A182F92572B2BF00E9672D /* ViewController.swift in Sources */,
+				96DA2B302572DF86003D4903 /* TrafficLightsActions.swift in Sources */,
 				963D511A2572B73D00611DDA /* TrafficColorValue.swift in Sources */,
 				96A182F52572B2BF00E9672D /* AppDelegate.swift in Sources */,
 				963D51272572B86600611DDA /* TrafficLightSubject.swift in Sources */,
@@ -341,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A1830C2572B2C000E9672D /* ObserversTestTests.swift in Sources */,
+				96DA2B422572E209003D4903 /* TrafficLightSubjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
