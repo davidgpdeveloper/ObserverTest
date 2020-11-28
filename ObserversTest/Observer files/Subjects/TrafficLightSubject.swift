@@ -28,7 +28,7 @@ class TrafficLightSubject {
     // MARK: FUNCTIONS
     func addObserver(_observer: ObserverProtocol) {
         
-        // Validation to check if the observer was already added to the array
+        // Validation to check if the observer was already added to the array to avoid duplicates
         guard trafficObserver.contains(where: {$0.Id == _observer.Id}) == false else {
             return
         }
