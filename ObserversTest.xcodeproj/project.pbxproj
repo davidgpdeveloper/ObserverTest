@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96379CAC2573A5DB00AC6ECE /* TrafficLightsActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96379CAB2573A5DB00AC6ECE /* TrafficLightsActionsTests.swift */; };
 		963D51102572B6B300611DDA /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D510F2572B6B300611DDA /* ObserverProtocol.swift */; };
 		963D51152572B71500611DDA /* VehicleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51142572B71500611DDA /* VehicleObserver.swift */; };
 		963D511A2572B73D00611DDA /* TrafficColorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D51192572B73D00611DDA /* TrafficColorValue.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96379CAB2573A5DB00AC6ECE /* TrafficLightsActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsActionsTests.swift; sourceTree = "<group>"; };
 		963D510F2572B6B300611DDA /* ObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
 		963D51142572B71500611DDA /* VehicleObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleObserver.swift; sourceTree = "<group>"; };
 		963D51192572B73D00611DDA /* TrafficColorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficColorValue.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				96DA2B412572E209003D4903 /* TrafficLightSubjectTests.swift */,
+				96379CAB2573A5DB00AC6ECE /* TrafficLightsActionsTests.swift */,
 			);
 			path = "Subjects tests";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			files = (
 				96A1830C2572B2C000E9672D /* ObserversTestTests.swift in Sources */,
 				96DA2B422572E209003D4903 /* TrafficLightSubjectTests.swift in Sources */,
+				96379CAC2573A5DB00AC6ECE /* TrafficLightsActionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
