@@ -25,7 +25,7 @@ class TrafficLightSubject {
         }
     }
     
-    // MARK: FUNCTIONS
+    // MARK: PROTOCOL FUNCTIONS
     func addObserver(_observer: ObserverProtocol) {
         
         // Validation to check if the observer was already added to the array to avoid duplicates
@@ -39,7 +39,7 @@ class TrafficLightSubject {
         trafficObserver = trafficObserver.filter({$0.Id != _observer.Id})
     }
     
-    private func notifyObserver() {
+    func notifyObserver() {
         // Notify all the observers that the state has changed
         trafficObserver.forEach({$0.onTrafficLightColorChange(_color: _color)})
     }
